@@ -4,13 +4,14 @@ using namespace std;
 /**
   Segment tree implementation using tempates
   @author theseems
-
+  
   WIKI: https://en.wikipedia.org/wiki/Segment_tree
   Habr (Russian): https://habr.com/ru/post/128787/
 **/
 
-template <class T> class seg_tree {
-private:
+template <class T>
+class seg_tree {
+ private:
   vector<T> tree, change;
   int bit_size = 1;
 
@@ -28,8 +29,7 @@ private:
   }
 
   T __get(int vtx, int tl, int tr, const int l, const int r) {
-    if (l > tr || r < tl)
-      return neutral;
+    if (l > tr || r < tl) return neutral;
     __push(vtx, tl, tr);
     if (l <= tl && tr <= r) {
       return tree[vtx];
@@ -68,15 +68,14 @@ private:
     }
   }
 
-public:
+ public:
   function<bool(T, T)> compare;
   function<void(T &, T &)> modify;
 
   T neutral, def;
 
   void build(const vector<T> &src) {
-    while (bit_size < src.size())
-      bit_size *= 2;
+    while (bit_size < src.size()) bit_size *= 2;
     tree.resize(2 * bit_size, neutral);
     change.resize(2 * bit_size, def);
 
@@ -109,7 +108,8 @@ public:
 
 int main() {
   // Simple task solve using seg_tree
-  // Source: https://informatics.mccme.ru/mod/statements/view3.php?id=12099&chapterid=3328
+  // Source:
+  // https://informatics.mccme.ru/mod/statements/view3.php?id=12099&chapterid=3328
 
   int n;
   cin >> n;
