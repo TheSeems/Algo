@@ -38,16 +38,16 @@ void quick_sort(el_t* a, ind_t l, ind_t r) {
 // Driver
 // Tested at task: https://informatics.mccme.ru/mod/statements/view3.php?id=1129&chapterid=766#1
 int main() {
-  size_t size = 0;
+  ind_t size = 0;
   cin >> size;
 
   el_t* arr = new el_t[size];
-  for (size_t i = 0; i < size; i++)
+  for (ind_t i = 0; i < size; i++)
     cin >> arr[i];
 
   quick_sort(arr, 0, size - 1);
   
-  for (size_t i = 0; i < size; i++)
+  for (ind_t i = 0; i < size; i++)
     cout << arr[i] << ' ';
     
   return 0;
