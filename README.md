@@ -8,3 +8,4 @@ Algorithms and data structures. I'm trying to do this beautifully
   
 ### Sorting algorithms
 - Quick recursive (https://github.com/TheSeems/algo/blob/master/quick_sort_recursive.cpp)
+- Radix sort (https://github.com/TheSeems/algo/blob/master/radix_sort.cpp)
