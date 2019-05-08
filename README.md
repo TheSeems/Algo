@@ -11,4 +11,4 @@ Algorithms and data structures. I'm trying to do this beautifully
 - Radix sort (https://github.com/TheSeems/algo/blob/master/radix_sort.cpp)
 
 ### Mathematics
-- Monte-carlo integration (https://github.com/TheSeems/algo/blob/master/monte_carlo.cpp)
+- Monte-carlo integration (https://github.com/TheSeems/algo/blob/master/monte_carlo.cpp) (minimal functionality)
