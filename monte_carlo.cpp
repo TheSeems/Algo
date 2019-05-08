@@ -24,7 +24,8 @@ double integral(std::function<double(double)> f, double x_min, double x_max,
 
 void grab_max_min(std::function<double(double)> f, double a, double b,
                   double &mn, double &mx, double epsilon = 1e-6) {
-  for (double d = a; d <= b; d += epsilon) {
+  mn = a, mx = a;
+  for (double d = a + epsilon; d <= b; d += epsilon) {
     double res = f(d);
     if (res < mn)
       mn = res;
