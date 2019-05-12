@@ -12,3 +12,6 @@ Algorithms and data structures. I'm trying to do this beautifully
 
 ### Mathematics
 - Monte-carlo integration (https://github.com/TheSeems/algo/blob/master/monte_carlo.cpp) (minimal functionality)
+
+### Languages and grammatics
+- Simple summator (https://github.com/TheSeems/algo/blob/master/summator.cpp)
