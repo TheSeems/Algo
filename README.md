@@ -15,3 +15,4 @@ Algorithms and data structures. I'm trying to do this beautifully
 
 ### Languages and grammatics
 - Simple summator (https://github.com/TheSeems/algo/blob/master/summator.cpp)
+- Simple bool evaluator (https://github.com/TheSeems/algo/blob/master/booleval.cpp)
