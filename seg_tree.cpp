@@ -122,7 +122,7 @@ int main() {
   // Building segment tree
   auto tree = seg_tree<int>(
       // Get maximum
-      [](int a, int b) -> bool { return a > b ? true : false; },
+      [](int a, int b) -> bool { return a > b; },
       // Addition of two arguments
       [](int &a, int &b) { a += b; },
       // Minimum (in this task it can be a zero)
